@@ -1,0 +1,180 @@
+body {
+	/*font-family: Arial, Helvetica, sans-serif;*/
+	font-family: Helvetica;
+}
+.wrapper {
+height: auto;
+width: 100%;
+display: inline-block;
+}
+#sec1 {
+	width: 20%;
+	height: 100%;
+	float: left;
+	/*border-right: 3px solid;*/
+	box-sizing: border-box;
+}
+#sec2 {
+	width: 80%;
+	height: 100%;
+	float: right;
+	border-left: 3px solid;
+	box-sizing: border-box;
+}
+.wrapper h3 {
+	text-align: center;
+}
+#sec1 .search input {
+	width: 80%;
+	height: 20px;
+	float: left;
+	margin-left: 5%;
+}
+#sec2 .search input {
+	width: 55%;
+	height: 20px;
+	float: left;
+	margin-left: 2%;
+}
+.tables {
+	height: 100px;
+	width: 100%;
+	box-sizing: border-box;
+	text-align: left;
+	box-shadow: -1px 2px 1px #888888;
+}
+.menus {
+	height: 150px;
+	width: 100%;
+	margin-left: 1%;
+	box-sizing: border-box;
+	text-align: left;
+	box-shadow: -1px 2px 1px #888888;
+}
+.tables h2 {
+	margin-left: 10px;
+	margin-top: 50px;
+	padding-top: 10px;
+}
+.menus h2 {
+	margin-left: 10px;
+	margin-top: 20px;
+	padding-top: 10px;
+}
+ul,li { list-style-type: none;
+        list-style-position:inside;
+        margin:0;
+        padding:0; 
+    }
+.tables span {
+	padding-left: 5px;
+}
+.menus span {
+	padding-left: 15px;
+}
+
+/*Modal CSS*/
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 45%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    padding: 2px 16px;
+    background-color: #2C42BB;/*#5cb85c;*/
+    color: white;
+}
+
+.modal-body {padding: 2px 16px;}
+
+.modal-footer {
+    padding: 2px 16px;
+    background-color: 'white';
+    text-align: right;
+}
+.modal-footer span {
+	font-size: 12px;
+}
+.modal-footer span:hover {
+    font-size: 16px;
+}
+
+.modal-body span {
+	padding-left: 105px;
+}
+
+table td {
+	/*border: 1px solid black;*/
+ 	border: none; 
+    border-collapse: collapse;
+}
+
+table {
+	counter-reset: serial-number;
+}
+
+table td:first-child:before {
+  counter-increment: serial-number;  /* Increment the serial number counter */
+  content: counter(serial-number);  /* Display the counter */
+}
+
+i:hover {
+	opacity: 0.5;
+}
+.modal-body h3 {
+    padding-left: 275px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+

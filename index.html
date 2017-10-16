@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<title>ZemosoRestaurant</title>
+	<link rel="stylesheet" type="text/css" href="stylesheet.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<div class='wrapper'>
+		<div id='sec1'>
+			<h3>Table</h3>
+			<div class='search'><input placeholder='Search table' onkeyup='searchTable()'></input></div></br></br>
+			<ul>
+				<li>
+					<div class='tables' id='ta0'>
+						<h2 id='hd0'>Table-1</h2>
+						<span id='sp0'>Rs.0 | Total Items: 0</span>
+					</div>
+				</li>
+				<li>
+					<div class='tables' id='ta1'>
+						<h2 id='hd1'>Table-2</h2>
+						<span id='sp1'>Rs.0 | Total Items: 0</span>
+					</div>
+				</li>
+				<li>
+					<div class='tables' id='ta2'>
+						<h2 id='hd2'>Table-3</h2>
+						<span id='sp2'>Rs.0 | Total Items: 0</span>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div id='sec2'>
+			<h3>Menu</h3>
+			<div class='search'><input placeholder='Search menu... by course, by food' onkeyup='searchMenu()'></input></div></br></br>
+			<ul>
+				<li>
+					<div class='menus' id='me0'>
+						<h2>Crusty Garlic Focaccia with Melted Cheese<span style='display: none'>Main Course</span></h2></br></br>
+						<span>105</span>
+					</div>
+				</li>
+				<li>
+					<div class='menus' id='me1'>
+						<h2>French Fries<span style='display: none'>Main Course</span></h2></br></br>
+						<span>105</span>
+					</div>
+				</li>
+				<li>
+					<div class='menus' id='me2'>
+						<h2>Home Country Fries with Herbs and chill Flakes<span style='display: none'>Appetizer</span></h2></br></br>
+						<span>105</span>
+					</div>
+				</li>
+				<li>
+					<div class='menus' id='me3'>
+						<h2>French Fries with Cheese and Jalapenos<span style='display: none'>Appetizer</span></h2></br></br>
+						<span>135</span>
+					</div>
+				</li>
+				<li>
+					<div class='menus' id='me4'>
+						<h2>Chicken and Cheese Burger<span style='display: none'>Entree</span></h2></br></br>
+						<span>150</span>
+					</div>
+				</li>
+				<li>
+					<div class='menus' id='me5'>
+						<h2>Veggie 9 Burger<span style='display: none'>Entree</span></h2></br></br>
+						<span>150</span>
+					</div>
+				</li>	
+			</ul>			
+		</div>
+</div>
+
+<!-- Modal HTML -->
+
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2></h2>
+    </div>
+    <div class="modal-body">
+    	<div><h4>S.No.<span>Item</span><span>Price</span></h4></div>
+     	<table style="width:100%">
+		  <col width='50'>
+		  <col width='230'>
+		  <col width='50'>
+		  <col width='148'>
+		  <col width='40'>
+		  <tr style='display: none'>
+		    <td></td>
+		    <td></td>
+		    <td></td>
+		    <td><input type='number' min='1' style='width: 150px' value="" placeholder='Number of servings'></td>
+		    <td><i class="fa fa-trash" aria-hidden="true" type='button' style='padding-left: 15px'></i>
+			</td>
+		  </tr>
+		</table>
+		<div><h3>Total:</h3><h3>300</h3></div>
+    </div>
+    <div class="modal-footer">
+      <span type='button'>CLOSE SESSION (GENERATE BILL)</span>
+    </div>
+  </div>
+
+</div>
+
+<script src='javascriptsheet.js'></script>
+</body>
+</html>
